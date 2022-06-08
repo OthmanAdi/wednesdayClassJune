@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container-fluid {
+    height: 100vh;
+    background: radial-gradient(ellipse at top, #FAD4D4, #FFF2F2, #827397, transparent), radial-gradient(ellipse at top, #FFE3A9, #C2DED1, #FFD9C0, transparent);
+    -webkit-animation: swishswish 8s ease-in-out infinite;
+    background-size: 400% 400%;
+}
+
+@-webkit-keyframes swishswish {
+    0% {
+        background-position: 0 50%
+    }
+    50% {
+        background-position: 100% 100%
+    }
+    100% {
+        background-position: 0 50%
+    }
+}
+
+.Whewo {
+    height: 5em;
+    background: linear-gradient(90deg, rgba(135, 5, 143, 1) 57%, rgba(193, 59, 83, 0.9598214285714286) 72%, rgba(0, 212, 255, 0.8477766106442577) 96%),
+    linear-gradient(-90deg, rgba(135, 5, 143, 1) 57%, rgba(193, 59, 83, 0.9598214285714286) 72%, rgba(0, 212, 255, 0.8477766106442577) 96%),
+    linear-gradient(90deg, rgba(135, 5, 143, 1) 57%, rgba(193, 59, 83, 0.9598214285714286) 72%, rgba(0, 212, 255, 0.8477766106442577) 96%),
+    linear-gradient(-90deg, rgba(135, 5, 143, 1) 57%, rgba(193, 59, 83, 0.9598214285714286) 72%, rgba(0, 212, 255, 0.8477766106442577) 96%);
+    background-repeat: no-repeat;
+    background-size: 200% 51%;
+    background-position: top left, bottom right;
+    -webkit-background-clip: text, text, padding-box, padding-box;
+    transition: 2s
+}
+
+.Whewo:hover {
+    background-position: top right, bottom left;
+}

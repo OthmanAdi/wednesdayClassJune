@@ -1,0 +1,41 @@
+:root {
+    --main-color: rgba(245, 151, 157, 1);
+    --secondary-color: rgba(150, 100, 88, 1);
+}
+
+.ColorField {
+    background: linear-gradient(to top, var(--main-color), var(--secondary-color));
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+
+.content {
+    text-align: center;
+    margin: auto;
+}
+
+.title {
+    display: inline-block;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    min-width: 380px;
+    padding: 10px;
+    cursor: default;
+}
+
+.fa-copy {
+    color: black;
+    font-size: 5vh;
+    z-index: 99;
+    position: relative;
+    left: 60px;
+    margin-left: -30px;
+}
